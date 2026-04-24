@@ -30,6 +30,7 @@ class Verification:
                 output("json", vul_info)
                 output("text", "--> [名称:" + vul_name + "] [编号:" + vul_numb + "] [类型:" + vul_type + "] " + info)
             else:  # 否则就是没有洞
+                output("text", "[-] No " + prt_name + " vulnerability found")
                 if debug == "debug":
                     print(now.timed(de=delay) + color.magenta("[-] The target no " + color.magenta(prt_name)))
                 else:
