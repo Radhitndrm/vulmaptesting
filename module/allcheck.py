@@ -7,7 +7,7 @@ import platform
 from module import globals
 from module.time import now
 from module.color import color
-import requests
+from thirdparty import requests
 from urllib.parse import urlparse
 
 
