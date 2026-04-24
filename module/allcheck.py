@@ -34,6 +34,8 @@ def version_check():
             print(now_warn + color.red(" The current version is: " + version + ", Version check failed"))
         except requests.exceptions.Timeout:
             print(now_warn + color.red(" The current version is: " + version + ", Version check failed"))
+        except (IndexError, KeyError):
+            print(now_warn + color.red(" The current version is: " + version + ", Version check failed"))
 
 
 def os_check():

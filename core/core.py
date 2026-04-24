@@ -149,7 +149,7 @@ class Core(object):
                     line = line.strip()  # 读取目标时过滤杂质
                     if line == "":
                         count_null += 1
-                for count_line, line in enumerate(open(target, 'rU')):  # 判断文件的行数
+                for count_line, line in enumerate(open(target, 'r')):  # 判断文件的行数
                     pass
                 count_line += 1  # 行数加1
                 target_num = count_line - count_null
